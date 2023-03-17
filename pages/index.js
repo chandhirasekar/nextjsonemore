@@ -15,12 +15,14 @@ export default function Home({data}) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {data.map((ev,index) => (
+      {data.map((ev, index) => (
         <>
           <Link key={index} href={`/event/${ev.id}`} passHref>
-            <Image width={300} height={300} alt={ev.title} src={ev.image} />
-            <h1>{ev.title}</h1>
-            <p>{ev.description}</p>
+            
+              <Image width={300} height={300} alt={ev.title} src={ev.image} />
+              <h1>{ev.title}</h1>
+              <p>{ev.description}</p>
+            
           </Link>
         </>
       ))}

@@ -8,9 +8,9 @@ const page = ({ data, titleName }) => {
       <div>
         {data.map((en) => (
           <Link key={en.id} href={`/event/${en.city}/${en.id}`} passHref>
-            <Image width={300} height={300} alt={en.title} src={en.image} />
-            <h1>{en.title}</h1>
-            <p>{en.description}</p>
+              <Image width={300} height={300} alt={en.title} src={en.image} />
+              <h1>{en.title}</h1>
+              <p>{en.description}</p>
           </Link>
         ))}
       </div>
